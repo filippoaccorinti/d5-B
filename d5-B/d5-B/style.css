@@ -1,0 +1,65 @@
+
+.container {
+    font-size: 0;
+    border: solid 1px black;
+    width: 400px;
+    
+   }
+   h1{
+    text-align: center;
+   }
+   section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 100px;
+  }
+
+.dispari div {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-size: 1rem;
+    position: relative;
+}
+.pari div {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-size: 1rem;
+    position: relative;
+}
+.dispari div:first-of-type span,.pari div:first-of-type span{
+    position: absolute;
+    right: 60px;
+}
+.dispari div:last-of-type span,.pari div:last-of-type span{
+    position: absolute;
+    left: 60px;
+}
+.dispari div:nth-child(even),.pari div:nth-child(odd){
+    background-color:black;
+}
+.dispari div:nth-child(odd),.pari div:nth-child(even){
+    background-color:burlywood;
+}
+.pari span{
+    position: absolute;
+    top: 60px;
+    right: 50%;
+}
+.dispari span{
+    position:absolute;
+    bottom: 60px;
+    right: 50%;
+}
+.dispari div:hover{
+    background-color: red;
+}
+.pari div:hover{
+    background-color: red;
+}
+
+<!--per mancanza di tempo non sono riuscito a completarlo
+spero di riuscirci nel weekend e aggiornero la repository -->
